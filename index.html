@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- ---------------------Website title----------------------- -->
-    <title>Emergency Service</title>
+    <title>জরুরি সেবা ডিরেক্টরি</title>
     <!-- --------------------Fav Icon link------------------------ -->
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
      <!-- ---------------------font-awesome Cdn----------------------- -->
@@ -42,7 +42,7 @@
             type="button"
             class="justify-center items-center flex bg-[rgba(65,255,107,0.2)] py-3 px-8 rounded-[50px] cursor-pointer gap-2"
           >
-            <span class="text-base text-black ml-1 font-bold font-roboto"
+            <span id="heart-count" class="text-base text-black ml-1 font-bold font-roboto"
               >0</span
             >
             <img class="w-6 h-auto" src="./assets/heart.png" alt="" />
@@ -51,7 +51,7 @@
             type="button"
             class="justify-center items-center flex bg-[rgba(65,255,107,0.2)] py-3 px-7 rounded-[50px] cursor-pointer gap-2"
           >
-            <span class="text-base text-black font-bold font-roboto">100</span>
+            <span id="coin-count" class="text-base text-black font-bold font-roboto">100</span>
             <img class="w-5 h-auto" src="./assets/coin.png" alt="" />
           </button>
           <button
@@ -93,7 +93,7 @@
             <div class="card bg-base-100 w-full shadow-sm p-4 rounded-2xl">
                <div class="flex justify-between items-center">
                 <figure class="w-14 rounded-2xl bg-[#FFE3E2] p-3"><img class="w-9" src="./assets/emergency.png" alt=""></figure>
-                <figure class="cursor-pointer"><i class="fa-regular fa-heart text-3xl text-[#5C5C5C]"></i></figure>
+                <figure  class=" cursor-pointer"><i class="heart-Click fa-regular fa-heart text-3xl text-[#5C5C5C]"></i></figure>
                </div>
                <h1 class="text-xl font-bold text-black mt-4">জাতীয় জরুরি সেবা</h1>
                <p class="text-base font-medium text-[#5C5C5C] mt-1">National Emergency</p>
@@ -102,15 +102,15 @@
                 <button type="button" class="text-sm px-3 py-2 bg-[#F2F2F2] text-[#5C5C5C] rounded-full">সার্বজনীন</button>
                </div>
                <div class="grid grid-cols-2 w-full gap-3 mt-4">
-                <button type="button" class="cursor-pointer font-roboto p-2 rounded-lg border-2 border-[#D9D9D9]  block col-span-1 text-[#5C5C5C]"><i class="fa-regular fa-copy pr-1"></i>Copy</button>
-                <button type="button" class="cursor-pointer font-roboto col-span-1 p-2 rounded-lg block bg-[#00A63E] text-white"><img class="inline pr-1 w-5" src="./assets/mobile.png" alt="">Call</button>
+                <button type="button" class="hover:bg-black hover:text-white transition-colors duration-700 ease-in-out cursor-pointer font-roboto p-2 rounded-lg border-2 border-[#D9D9D9]  block col-span-1 text-[#5C5C5C]"><i class="fa-regular fa-copy pr-1"></i>Copy</button>
+                <button type="button" class="call-Btn hover:bg-[#08ea5b] transition-colors duration-700 ease-in-out cursor-pointer font-roboto col-span-1 p-2 rounded-lg block bg-[#00A63E] text-white"><i  id="call-icon" class="fa-solid fa-phone mr-1 text-sm rotate-12"></i>Call</button>
                </div>
             </div>
              <!-- ---------------------cart 2 here----------------------- -->
             <div class="card bg-base-100 w-full shadow-sm p-4 rounded-2xl">
                <div class="flex justify-between items-center">
                 <figure class="w-14 rounded-2xl bg-[#DFEFFF] p-3"><img class="w-9" src="./assets/police.png" alt=""></figure>
-                <figure class="cursor-pointer"><i class="fa-regular fa-heart text-3xl text-[#5C5C5C]"></i></figure>
+                <figure class="cursor-pointer "><i class="heart-Click fa-regular fa-heart text-3xl text-[#5C5C5C]"></i></figure>
                </div>
                <h1 class="text-xl font-bold text-black mt-4">পুলিশ</h1>
                <p class="text-base font-medium text-[#5C5C5C] mt-1">Police</p>
@@ -119,15 +119,15 @@
                 <button type="button" class="text-sm px-3 py-2 bg-[#F2F2F2] text-[#5C5C5C] rounded-full">পুলিশ</button>
                </div>
                <div class="grid grid-cols-2 w-full gap-3 mt-4">
-                <button type="button" class="cursor-pointer font-roboto p-2 rounded-lg border-2 border-[#D9D9D9]  block col-span-1 text-[#5C5C5C]"><i class="fa-regular fa-copy pr-1"></i>Copy</button>
-                <button type="button" class="cursor-pointer font-roboto col-span-1 p-2 rounded-lg block bg-[#00A63E] text-white"><img class="inline pr-1 w-5" src="./assets/mobile.png" alt="">Call</button>
+                <button type="button" class="hover:bg-black hover:text-white transition-colors duration-700 ease-in-out cursor-pointer font-roboto p-2 rounded-lg border-2 border-[#D9D9D9]  block col-span-1 text-[#5C5C5C]"><i class="fa-regular fa-copy pr-1"></i>Copy</button>
+                <button type="button" class="call-Btn hover:bg-[#08ea5b] transition-colors duration-700 ease-in-out cursor-pointer font-roboto col-span-1 p-2 rounded-lg block bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-1 text-sm rotate-12"></i>Call</button>
                </div>
             </div>
              <!-- ---------------------cart 3 here----------------------- -->
             <div class="card bg-base-100 w-full shadow-sm p-4 rounded-2xl">
                <div class="flex justify-between items-center">
                 <figure class="w-14 rounded-2xl bg-[#FFE3E2] p-3"><img class="w-9" src="./assets/fire-service.png" alt=""></figure>
-                <figure class="cursor-pointer"><i class="fa-regular fa-heart text-3xl text-[#5C5C5C]"></i></figure>
+                <figure class="cursor-pointer "><i class="heart-Click fa-regular fa-heart text-3xl text-[#5C5C5C]"></i></figure>
                </div>
                <h1 class="text-xl font-bold text-black mt-4">ফায়ার সার্ভিস</h1>
                <p class="text-base font-medium text-[#5C5C5C] mt-1">Fire Service</p>
@@ -136,8 +136,8 @@
                 <button type="button" class="text-sm px-3 py-2 bg-[#F2F2F2] text-[#5C5C5C] rounded-full">ফায়ার</button>
                </div>
                <div class="grid grid-cols-2 w-full gap-3 mt-4">
-                <button type="button" class="cursor-pointer font-roboto p-2 rounded-lg border-2 border-[#D9D9D9]  block col-span-1 text-[#5C5C5C]"><i class="fa-regular fa-copy pr-1"></i>Copy</button>
-                <button type="button" class="cursor-pointer font-roboto col-span-1 p-2 rounded-lg block bg-[#00A63E] text-white"><img class="inline pr-1 w-5" src="./assets/mobile.png" alt="">Call</button>
+                <button type="button" class="hover:bg-black hover:text-white transition-colors duration-700 ease-in-out cursor-pointer font-roboto p-2 rounded-lg border-2 border-[#D9D9D9]  block col-span-1 text-[#5C5C5C]"><i class="fa-regular fa-copy pr-1"></i>Copy</button>
+                <button type="button" class="call-Btn hover:bg-[#08ea5b] transition-colors duration-700 ease-in-out cursor-pointer font-roboto col-span-1 p-2 rounded-lg block bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-1 text-sm rotate-12"></i>Call</button>
                </div>
             </div>
           </div>
@@ -147,7 +147,7 @@
             <div class="card bg-base-100 w-full shadow-sm p-4 rounded-2xl">
                <div class="flex justify-between items-center">
                 <figure class="w-14 rounded-2xl bg-[#FFE3E2] p-3"><img class="w-9" src="./assets/ambulance.png" alt=""></figure>
-                <figure class="cursor-pointer"><i class="fa-regular fa-heart text-3xl text-[#5C5C5C]"></i></figure>
+                <figure class="cursor-pointer "><i class="heart-Click fa-regular fa-heart text-3xl text-[#5C5C5C]"></i></figure>
                </div>
                <h1 class="text-xl font-bold text-black mt-4">অ্যাম্বুলেন্স</h1>
                <p class="text-base font-medium text-[#5C5C5C] mt-1">Ambulance</p>
@@ -156,15 +156,15 @@
                 <button type="button" class="text-sm px-3 py-2 bg-[#F2F2F2] text-[#5C5C5C] rounded-full">স্বাস্থ্য</button>
                </div>
                <div class="grid grid-cols-2 w-full gap-3 mt-4">
-                <button type="button" class="cursor-pointer font-roboto p-2 rounded-lg border-2 border-[#D9D9D9]  block col-span-1 text-[#5C5C5C]"><i class="fa-regular fa-copy pr-1"></i>Copy</button>
-                <button type="button" class="cursor-pointer font-roboto col-span-1 p-2 rounded-lg block bg-[#00A63E] text-white"><img class="inline pr-1 w-5" src="./assets/mobile.png" alt="">Call</button>
+                <button type="button" class="hover:bg-black hover:text-white transition-colors duration-700 ease-in-out cursor-pointer font-roboto p-2 rounded-lg border-2 border-[#D9D9D9]  block col-span-1 text-[#5C5C5C]"><i class="fa-regular fa-copy pr-1"></i>Copy</button>
+                <button type="button" class="call-Btn hover:bg-[#08ea5b] transition-colors duration-700 ease-in-out cursor-pointer font-roboto col-span-1 p-2 rounded-lg block bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-1 text-sm rotate-12"></i>Call</button>
                </div>
             </div>
              <!-- ---------------------cart 2 here----------------------- -->
             <div class="card bg-base-100 w-full shadow-sm p-4 rounded-2xl">
                <div class="flex justify-between items-center">
                 <figure class="w-14 rounded-2xl bg-[#FFE3E2] p-3"><img class="w-9" src="./assets/woman-child.png" alt=""></figure>
-                <figure class="cursor-pointer"><i class="fa-regular fa-heart text-3xl text-[#5C5C5C]"></i></figure>
+                <figure class="cursor-pointer "><i class="heart-Click fa-regular fa-heart text-3xl text-[#5C5C5C]"></i></figure>
                </div>
                <h1 class="text-xl font-bold text-black mt-4">নারী ও শিশু সহায়তা</h1>
                <p class="text-base font-medium text-[#5C5C5C] mt-1">Women & Child Helpline</p>
@@ -173,15 +173,15 @@
                 <button type="button" class="text-sm px-3 py-2 bg-[#F2F2F2] text-[#5C5C5C] rounded-full">সহায়তা</button>
                </div>
                <div class="grid grid-cols-2 w-full gap-3 mt-4">
-                <button type="button" class="cursor-pointer font-roboto p-2 rounded-lg border-2 border-[#D9D9D9]  block col-span-1 text-[#5C5C5C]"><i class="fa-regular fa-copy pr-1"></i>Copy</button>
-                <button type="button" class="cursor-pointer font-roboto col-span-1 p-2 rounded-lg block bg-[#00A63E] text-white"><img class="inline pr-1 w-5" src="./assets/mobile.png" alt="">Call</button>
+                <button type="button" class="hover:bg-black hover:text-white transition-colors duration-700 ease-in-out cursor-pointer font-roboto p-2 rounded-lg border-2 border-[#D9D9D9]  block col-span-1 text-[#5C5C5C]"><i class="fa-regular fa-copy pr-1"></i>Copy</button>
+                <button type="button" class="call-Btn hover:bg-[#08ea5b] transition-colors duration-700 ease-in-out cursor-pointer font-roboto col-span-1 p-2 rounded-lg block bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-1 text-sm rotate-12"></i>Call</button>
                </div>
             </div>
              <!-- ---------------------cart 3 here----------------------- -->
             <div class="card bg-base-100 w-full shadow-sm p-4 rounded-2xl">
                <div class="flex justify-between items-center">
                 <figure class="w-14 rounded-2xl bg-[#FFE3E2] p-3"><img class="w-9" src="./assets/Anti-Corruption.svg" alt=""></figure>
-                <figure class="cursor-pointer"><i class="fa-regular fa-heart text-3xl text-[#5C5C5C]"></i></figure>
+                <figure class="cursor-pointer "><i class="heart-Click fa-regular fa-heart text-3xl text-[#5C5C5C]"></i></figure>
                </div>
                <h1 class="text-xl font-bold text-black mt-4">দুদক</h1>
                <p class="text-base font-medium text-[#5C5C5C] mt-1">Anti-Corruption</p>
@@ -190,8 +190,8 @@
                 <button type="button" class="text-sm px-3 py-2 bg-[#F2F2F2] text-[#5C5C5C] rounded-full">সরকারি</button>
                </div>
                <div class="grid grid-cols-2 w-full gap-3 mt-4">
-                <button type="button" class="cursor-pointer font-roboto p-2 rounded-lg border-2 border-[#D9D9D9]  block col-span-1 text-[#5C5C5C]"><i class="fa-regular fa-copy pr-1"></i>Copy</button>
-                <button type="button" class="cursor-pointer font-roboto col-span-1 p-2 rounded-lg block bg-[#00A63E] text-white"><img class="inline pr-1 w-5" src="./assets/mobile.png" alt="">Call</button>
+                <button type="button" class="hover:bg-black hover:text-white transition-colors duration-700 ease-in-out cursor-pointer font-roboto p-2 rounded-lg border-2 border-[#D9D9D9]  block col-span-1 text-[#5C5C5C]"><i class="fa-regular fa-copy pr-1"></i>Copy</button>
+                <button type="button" class="call-Btn hover:bg-[#08ea5b] transition-colors duration-700 ease-in-out cursor-pointer font-roboto col-span-1 p-2 rounded-lg block bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-1 text-sm rotate-12"></i>Call</button>
                </div>
             </div>
           </div>
@@ -201,7 +201,7 @@
             <div class="card bg-base-100 w-full shadow-sm p-4 rounded-2xl">
                <div class="flex justify-between items-center">
                 <figure class="w-14 rounded-2xl bg-[#FFE3E2] p-3"><img class="w-9" src="./assets/power-outage.png" alt=""></figure>
-                <figure class="cursor-pointer"><i class="fa-regular fa-heart text-3xl text-[#5C5C5C]"></i></figure>
+                <figure class="cursor-pointer "><i class="heart-Click fa-regular fa-heart text-3xl text-[#5C5C5C]"></i></figure>
                </div>
                <h1 class="text-xl font-bold text-black mt-4">বিদ্যুৎ বিভ্রাট</h1>
                <p class="text-base font-medium text-[#5C5C5C] mt-1">Electricity Outage</p>
@@ -210,32 +210,32 @@
                 <button type="button" class="text-sm px-3 py-2 bg-[#F2F2F2] text-[#5C5C5C] rounded-full">বিদ্যুৎ</button>
                </div>
                <div class="grid grid-cols-2 w-full gap-3 mt-4">
-                <button type="button" class="cursor-pointer font-roboto p-2 rounded-lg border-2 border-[#D9D9D9]  block col-span-1 text-[#5C5C5C]"><i class="fa-regular fa-copy pr-1"></i>Copy</button>
-                <button type="button" class="cursor-pointer font-roboto col-span-1 p-2 rounded-lg block bg-[#00A63E] text-white"><img class="inline pr-1 w-5" src="./assets/mobile.png" alt="">Call</button>
+                <button type="button" class="hover:bg-black hover:text-white transition-colors duration-700 ease-in-out cursor-pointer font-roboto p-2 rounded-lg border-2 border-[#D9D9D9]  block col-span-1 text-[#5C5C5C]"><i class="fa-regular fa-copy pr-1"></i>Copy</button>
+                <button type="button" class="call-Btn hover:bg-[#08ea5b] transition-colors duration-700 ease-in-out cursor-pointer font-roboto col-span-1 p-2 rounded-lg block bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-1 text-sm rotate-12"></i>Call</button>
                </div>
             </div>
              <!-- ---------------------cart 2 here----------------------- -->
             <div class="card bg-base-100 w-full shadow-sm p-4 rounded-2xl">
                <div class="flex justify-between items-center">
                 <figure class="w-14 rounded-2xl bg-[#FFE3E2] p-3"><img class="w-9" src="./assets/brac.png" alt=""></figure>
-                <figure class="cursor-pointer"><i class="fa-regular fa-heart text-3xl text-[#5C5C5C]"></i></figure>
+                <figure class="cursor-pointer "><i class="heart-Click fa-regular fa-heart text-3xl text-[#5C5C5C]"></i></figure>
                </div>
                <h1 class="text-xl font-bold text-black mt-4">ব্র্যাক</h1>
-               <p class="text-base font-medium text-[#5C5C5C] mt-1">Brac</p>
+               <p class="services-title text-base font-medium text-[#5C5C5C] mt-1">Brac</p>
                <h2 class="font-bold text-2xl text-[#111111] mt-5">16445</h2>
                <div>
                 <button type="button" class="text-sm px-3 py-2 bg-[#F2F2F2] text-[#5C5C5C] rounded-full">এনজিও</button>
                </div>
                <div class="grid grid-cols-2 w-full gap-3 mt-4">
-                <button type="button" class="cursor-pointer font-roboto p-2 rounded-lg border-2 border-[#D9D9D9]  block col-span-1 text-[#5C5C5C]"><i class="fa-regular fa-copy pr-1"></i>Copy</button>
-                <button type="button" class="cursor-pointer font-roboto col-span-1 p-2 rounded-lg block bg-[#00A63E] text-white"><img class="inline pr-1 w-5" src="./assets/mobile.png" alt="">Call</button>
+                <button type="button" class="hover:bg-black hover:text-white transition-colors duration-700 ease-in-out cursor-pointer font-roboto p-2 rounded-lg border-2 border-[#D9D9D9]  block col-span-1 text-[#5C5C5C]"><i class="fa-regular fa-copy pr-1"></i>Copy</button>
+                <button type="button" class="call-Btn hover:bg-[#08ea5b] transition-colors duration-700 ease-in-out cursor-pointer font-roboto col-span-1 p-2 rounded-lg block bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-1 text-sm rotate-12"></i>Call</button>
                </div>
             </div>
              <!-- ---------------------cart 3 here----------------------- -->
             <div class="card bg-base-100 w-full shadow-sm p-4 rounded-2xl">
                <div class="flex justify-between items-center">
                 <figure class="w-14 rounded-2xl bg-[#FFE3E2] p-3"><img class="w-9" src="./assets/Bangladesh-Railway.png" alt=""></figure>
-                <figure class="cursor-pointer"><i class="fa-regular fa-heart text-3xl text-[#5C5C5C]"></i></figure>
+                <figure class="cursor-pointer"><i class=" heart-Click fa-regular fa-heart text-3xl text-[#5C5C5C]"></i></figure>
                </div>
                <h1 class="text-xl font-bold text-black mt-4">বাংলাদেশ রেলওয়ে</h1>
                <p class="text-base font-medium text-[#5C5C5C] mt-1">Bangladesh Railway</p>
@@ -244,17 +244,21 @@
                 <button type="button" class="text-sm px-3 py-2 bg-[#F2F2F2] text-[#5C5C5C] rounded-full">পরিবহন</button>
                </div>
                <div class="grid grid-cols-2 w-full gap-3 mt-4">
-                <button type="button" class="cursor-pointer font-roboto p-2 rounded-lg border-2 border-[#D9D9D9]  block col-span-1 text-[#5C5C5C]"><i class="fa-regular fa-copy pr-1"></i>Copy</button>
-                <button type="button" class="cursor-pointer font-roboto col-span-1 p-2 rounded-lg block bg-[#00A63E] text-white"><img class="inline pr-1 w-5" src="./assets/mobile.png" alt="">Call</button>
+                <button type="button" class="hover:bg-black hover:text-white transition-colors duration-700 ease-in-out cursor-pointer font-roboto p-2 rounded-lg border-2 border-[#D9D9D9]  block col-span-1 text-[#5C5C5C]"><i class="fa-regular fa-copy pr-1"></i>Copy</button>
+                <button type="button" class="call-Btn hover:bg-[#08ea5b] transition-colors duration-700 ease-in-out cursor-pointer font-roboto col-span-1 p-2 rounded-lg block bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-1 text-sm rotate-12"></i>Call</button>
                </div>
             </div>
           </div>
-
+ <!-- ---------------------Call history start here----------------------- -->
         </div>
         <div class="bg-white shadow rounded-xl col-span-3 p-5 h-full ">
           <div class="flex justify-between items-center">
             <h1 class="text-black font-semibold text-lg"><img class="mr-2 inline" src="./assets/clock-icon.png" alt="">Call History</h1>
             <button class="px-8 py-3 rounded-[50px] text-base font-semibold bg-[#00A63E] text-white">Clear</button>
+          </div>
+          <div id="history-card" class="mt-5">
+            
+
           </div>
         </div>
       </section>
