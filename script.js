@@ -43,7 +43,11 @@ for (let callBtn of callBtns) {
             </div>`
             
             historyCardEl.appendChild(div);
-            
+
+            const clearBtn = document.getElementById("clearBtn");
+            clearBtn.addEventListener("click", function () {
+                historyCardEl.innerHTML = ""; 
+            })
             
         }
         else {
@@ -55,6 +59,31 @@ for (let callBtn of callBtns) {
     })
     
 }
+
+// Copy Functionality start
+
+const copyBtns = document.querySelectorAll(".copy-btn");
+let copyCount = 1;
+for (let copyBtn of copyBtns) {
+    copyBtn.addEventListener("click", function () {
+        const copyCountNum = document.getElementById("copyCount");
+        copyCountNum.innerText = copyCount;
+        copyCount++;
+
+        let servicesNumber = copyBtn.parentNode.parentNode.children[3].innerText;
+        let inputTag = document.createElement("input");
+        document.getElementById("history-card").appendChild(inputTag);
+        inputTag.value = servicesNumber;
+        inputTag.select();
+        document.execCommand("copy");
+        document.getElementById("history-card").removeChild(inputTag);
+        alert("নাম্বার কপি হয়েছে: " + servicesNumber);
+        
+    })
+    
+     
+}
+
 
 
 
