@@ -54,9 +54,9 @@ Here you can see that the event first started from the child button then bubbled
 Event Delegation is a JavaScript technique where, instead of having separate event listeners for many child elements, an event listener is placed on a parent element.
 The event is then passed to the parent using event bubbling, and the parent is identified to a specific child.
 <br>
--Performance is better
--Dynamic elements can be handled
--Clean code & less memory usage
+- Performance is better  
+- Dynamic elements can be handled  
+- Clean code & less memory usage 
 <br>
 6. What is the difference between **preventDefault() and stopPropagation()** methods?
 
