@@ -14,6 +14,8 @@
 ```html
 <!-- Initial DOM -->
 <div id="myName"></div> <br>
+```html
+
 ```javascript
 // Create a new element 
 let newElement = document.createElement("p");
@@ -22,7 +24,8 @@ newElement.innerText = "My Name is Ashadul islam";
  // Select the DOM parent element 
 let myName = document.getElementById("myName"); 
  // Inserting into the DOM 
-myName.appendChild(newElement);  
+myName.appendChild(newElement);
+```javascript
 
 3. What is **Event Bubbling** and how does it work?
 #### Answer:<br>
