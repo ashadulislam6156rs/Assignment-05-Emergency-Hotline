@@ -21,18 +21,18 @@
   </head>
   <body class="font-hind-Madurai">
     <!-- ---------------------Header start here----------------------- -->
-    <header class="max-w-7xl m-auto">
+    <header class="max-w-full m-auto max-xl:max-w-7xl max-lg:max-w-5xl max-md:max-w-3xl max-sm:max-w-screen-sm">
       <!-- ---------------------Navbar start here----------------------- -->
       <nav
-        class="max-w-7xl px-12 py-4 flex justify-between items-center shadow-sm"
+        class="max-w-full max-xl:max-w-7xl max-lg:max-w-5xl max-md:max-w-3xl px-12 py-4 flex justify-between items-center max-sm:max-w-screen-sm shadow-sm max-sm:flex-col max-sm:gap-7"
       >
         <div id="nav-left" class="flex items-center justify-center gap-3">
           <img
-            class="w-14"
+            class="w-14 max-md:w-10"
             src="./assets/logo.png"
             alt="This is Website logo"
           />
-          <h1 class="text-2xl text-[#006747] font-extrabold font-roboto">
+          <h1 class="max-md:text-base text-2xl text-[#006747] font-extrabold font-roboto">
             Emergency <br />
             Service
           </h1>
@@ -40,7 +40,7 @@
         <div id="nav-right" class="flex items-center justify-center gap-3">
           <button
             type="button"
-            class="justify-center items-center flex bg-[rgba(65,255,107,0.2)] py-3 px-8 rounded-[50px] gap-2"
+            class="max-md:py-2 max-md:px-5 justify-center items-center flex bg-[rgba(65,255,107,0.2)] py-3 px-8 rounded-[50px] gap-2"
           >
             <span id="heart-count" class="text-base text-black ml-1 font-bold font-roboto"
               >0</span
@@ -49,14 +49,14 @@
           </button>
           <button
             type="button"
-            class="justify-center items-center flex bg-[rgba(65,255,107,0.2)] py-3 px-7 rounded-[50px] gap-2"
+            class="max-md:py-2 max-md:px-5 justify-center items-center flex bg-[rgba(65,255,107,0.2)] py-3 px-7 rounded-[50px] gap-2"
           >
             <span id="coin-count" class="text-base text-black font-bold font-roboto">100</span>
             <img class="w-5 h-auto" src="./assets/coin.png" alt="" />
           </button>
           <button
             type="button"
-            class="flex bg-[#00A63E] py-3 px-7 rounded-[50px] font-bold justify-center items-center text-white gap-2"
+            class="max-md:py-2 max-md:px-5 flex bg-[#00A63E] py-3 px-7 rounded-[50px] font-bold justify-center items-center text-white gap-2"
           >
             <span id="copyCount" class="text-base font-roboto">0</span>
             Copy
@@ -67,200 +67,200 @@
       <!-- ---------------------Banner start here----------------------- -->
 
       <section
-        class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-center py-3"
+        class="m-auto bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-center py-3"
       >
         <img
-          class="w-20 mx-auto"
-          src="./assets/logo.png"
+          class="max-md:w-16 w-20 mx-auto"
+          src="./assets/logo-dark.png"
           alt="This is banner image"
         />
-        <h1 class="text-white py-2 text-4xl font-semibold">
+        <h1 class="max-md:text-2xl text-white py-2 text-4xl font-semibold">
           জরুরি সেবা ডিরেক্টরি
         </h1>
-        <p class="text-white text-base font-semibold">
+        <p class="max-sm:px-2 max-md:px-20 max-md:text-sm text-white text-base font-semibold">
           Government Emergency Services at Your Fingertip – A Project by
           Government of the People’s Republic of Bangladesh
         </p>
       </section>
     </header>
     <!-- ---------------------Main start here----------------------- -->
-    <main class="bg-[#f5fff6] py-9 max-w-7xl m-auto">
-      <section class="w-11/12 grid m-auto grid-cols-12 gap-5 h-full">
-        <div class="col-span-9">
+    <main class="bg-[#f5fff6] py-9 max-w-full max-xl:max-w-7xl max-lg:max-w-5xl max-md:max-w-3xl max-sm:max-w-screen-sm m-auto">
+      <section class="w-11/12 grid m-auto grid-cols-12 max-sm:grid-cols-none gap-10 max-lg:gap-6 h-full ">
+        <div class="col-span-9 max-md:col-span-7 max-sm:col-span-12">
            <!-- ---------------------cart Container 1 here----------------------- -->
-          <div class="flex justify-between items-center gap-3 mb-5">
+          <div class="flex justify-between items-center gap-3 mb-5 max-md:flex-col">
              <!-- ---------------------cart 1 here----------------------- -->
             <div class="card bg-base-100 w-full shadow-sm p-4 rounded-2xl">
                <div class="flex justify-between items-center">
-                <figure class="w-14 rounded-2xl bg-[#FFE3E2] p-3"><img class="w-9" src="./assets/emergency.png" alt=""></figure>
-                <figure  class=" cursor-pointer"><i class="heart-Click fa-regular fa-heart text-3xl text-[#5C5C5C]"></i></figure>
+                <figure class="w-14 max-lg:w-12 rounded-2xl bg-[#FFE3E2] p-3"><img class="w-9" src="./assets/emergency.png" alt=""></figure>
+                <figure  class=" cursor-pointer"><i class="heart-Click max-lg:text-xl fa-regular fa-heart text-3xl text-[#5C5C5C]"></i></figure>
                </div>
-               <h1 class="text-xl font-bold text-black mt-4">জাতীয় জরুরি সেবা</h1>
-               <p class="text-base font-medium text-[#5C5C5C] mt-1">National Emergency</p>
+               <h1 class="text-xl max-lg:text-base font-bold text-black mt-4">জাতীয় জরুরি সেবা</h1>
+               <p class="text-base max-lg:text-sm font-medium text-[#5C5C5C] mt-1">National Emergency</p>
                <h2 class="font-bold text-2xl text-[#111111] mt-5">999</h2>
                <div>
                 <button type="button" class="text-sm px-3 py-2 bg-[#F2F2F2] text-[#5C5C5C] rounded-full">সার্বজনীন</button>
                </div>
                <div class="grid grid-cols-2 w-full gap-3 mt-4">
-                <button type="button" class="copy-btn hover:bg-black hover:text-white transition-colors duration-700 ease-in-out cursor-pointer font-roboto p-2 rounded-lg border-2 border-[#D9D9D9]  block col-span-1 text-[#5C5C5C]"><i class="fa-regular fa-copy pr-1"></i>Copy</button>
-                <button type="button" class="call-Btn hover:bg-[#08ea5b] transition-colors duration-700 ease-in-out cursor-pointer font-roboto col-span-1 p-2 rounded-lg block bg-[#00A63E] text-white"><i  id="call-icon" class="fa-solid fa-phone mr-1 text-sm rotate-12"></i>Call</button>
+                <button type="button" class="max-lg:text-xs copy-btn hover:bg-black hover:text-white transition-colors duration-700 ease-in-out cursor-pointer font-roboto p-2 rounded-lg border-2 border-[#D9D9D9]  block col-span-1 text-[#5C5C5C]"><i class="fa-regular fa-copy pr-1"></i>Copy</button>
+                <button type="button" class="max-lg:text-xs call-Btn hover:bg-[#08ea5b] transition-colors duration-700 ease-in-out cursor-pointer font-roboto col-span-1 p-2 rounded-lg block bg-[#00A63E] text-white"><i  id="call-icon" class="fa-solid fa-phone mr-1 text-sm rotate-12"></i>Call</button>
                </div>
             </div>
              <!-- ---------------------cart 2 here----------------------- -->
             <div class="card bg-base-100 w-full shadow-sm p-4 rounded-2xl">
                <div class="flex justify-between items-center">
-                <figure class="w-14 rounded-2xl bg-[#DFEFFF] p-3"><img class="w-9" src="./assets/police.png" alt=""></figure>
-                <figure class="cursor-pointer "><i class="heart-Click fa-regular fa-heart text-3xl text-[#5C5C5C]"></i></figure>
+                <figure class="w-14  max-lg:w-12 rounded-2xl bg-[#DFEFFF] p-3"><img class="w-9" src="./assets/police.png" alt=""></figure>
+                <figure class="cursor-pointer "><i class="heart-Click  max-lg:text-xl fa-regular fa-heart text-3xl text-[#5C5C5C]"></i></figure>
                </div>
-               <h1 class="text-xl font-bold text-black mt-4">পুলিশ</h1>
-               <p class="text-base font-medium text-[#5C5C5C] mt-1">Police</p>
+               <h1 class="text-xl  max-lg:text-base font-bold text-black mt-4">পুলিশ</h1>
+               <p class="text-base font-medium max-lg:text-sm text-[#5C5C5C] mt-1">Police</p>
                <h2 class="font-bold text-2xl text-[#111111] mt-5">999</h2>
                <div>
                 <button type="button" class="text-sm px-3 py-2 bg-[#F2F2F2] text-[#5C5C5C] rounded-full">পুলিশ</button>
                </div>
                <div class="grid grid-cols-2 w-full gap-3 mt-4">
-                <button type="button" class="copy-btn hover:bg-black hover:text-white transition-colors duration-700 ease-in-out cursor-pointer font-roboto p-2 rounded-lg border-2 border-[#D9D9D9]  block col-span-1 text-[#5C5C5C]"><i class="fa-regular fa-copy pr-1"></i>Copy</button>
-                <button type="button" class="call-Btn hover:bg-[#08ea5b] transition-colors duration-700 ease-in-out cursor-pointer font-roboto col-span-1 p-2 rounded-lg block bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-1 text-sm rotate-12"></i>Call</button>
+                <button type="button" class="max-lg:text-xs copy-btn hover:bg-black hover:text-white transition-colors duration-700 ease-in-out cursor-pointer font-roboto p-2 rounded-lg border-2 border-[#D9D9D9]  block col-span-1 text-[#5C5C5C]"><i class="fa-regular fa-copy pr-1"></i>Copy</button>
+                <button type="button" class="max-lg:text-xs call-Btn hover:bg-[#08ea5b] transition-colors duration-700 ease-in-out cursor-pointer font-roboto col-span-1 p-2 rounded-lg block bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-1 text-sm rotate-12"></i>Call</button>
                </div>
             </div>
              <!-- ---------------------cart 3 here----------------------- -->
             <div class="card bg-base-100 w-full shadow-sm p-4 rounded-2xl">
                <div class="flex justify-between items-center">
-                <figure class="w-14 rounded-2xl bg-[#FFE3E2] p-3"><img class="w-9" src="./assets/fire-service.png" alt=""></figure>
-                <figure class="cursor-pointer "><i class="heart-Click fa-regular fa-heart text-3xl text-[#5C5C5C]"></i></figure>
+                <figure class="w-14 max-lg:w-12 rounded-2xl bg-[#FFE3E2] p-3"><img class="w-9" src="./assets/fire-service.png" alt=""></figure>
+                <figure class="cursor-pointer "><i class="heart-Click max-lg:text-xl fa-regular fa-heart text-3xl text-[#5C5C5C]"></i></figure>
                </div>
-               <h1 class="text-xl font-bold text-black mt-4">ফায়ার সার্ভিস</h1>
-               <p class="text-base font-medium text-[#5C5C5C] mt-1">Fire Service</p>
+               <h1 class="text-xl max-lg:text-base font-bold text-black mt-4">ফায়ার সার্ভিস</h1>
+               <p class="text-base font-medium max-lg:text-sm text-[#5C5C5C] mt-1">Fire Service</p>
                <h2 class="font-bold text-2xl text-[#111111] mt-5">999</h2>
                <div>
                 <button type="button" class="text-sm px-3 py-2 bg-[#F2F2F2] text-[#5C5C5C] rounded-full">ফায়ার</button>
                </div>
                <div class="grid grid-cols-2 w-full gap-3 mt-4">
-                <button type="button" class="copy-btn hover:bg-black hover:text-white transition-colors duration-700 ease-in-out cursor-pointer font-roboto p-2 rounded-lg border-2 border-[#D9D9D9]  block col-span-1 text-[#5C5C5C]"><i class="fa-regular fa-copy pr-1"></i>Copy</button>
-                <button type="button" class="call-Btn hover:bg-[#08ea5b] transition-colors duration-700 ease-in-out cursor-pointer font-roboto col-span-1 p-2 rounded-lg block bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-1 text-sm rotate-12"></i>Call</button>
+                <button type="button" class= "max-lg:text-xs copy-btn hover:bg-black hover:text-white transition-colors duration-700 ease-in-out cursor-pointer font-roboto p-2 rounded-lg border-2 border-[#D9D9D9]  block col-span-1 text-[#5C5C5C]"><i class="fa-regular fa-copy pr-1"></i>Copy</button>
+                <button type="button" class= "max-lg:text-xs call-Btn hover:bg-[#08ea5b] transition-colors duration-700 ease-in-out cursor-pointer font-roboto col-span-1 p-2 rounded-lg block bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-1 text-sm rotate-12"></i>Call</button>
                </div>
             </div>
           </div>
            <!-- ---------------------cart Container 2 here----------------------- -->
-          <div class="flex justify-between items-center gap-3 mb-5">
+          <div class="flex justify-between items-center gap-3 mb-5 max-md:flex-col">
              <!-- ---------------------cart 1 here----------------------- -->
             <div class="card bg-base-100 w-full shadow-sm p-4 rounded-2xl">
                <div class="flex justify-between items-center">
-                <figure class="w-14 rounded-2xl bg-[#FFE3E2] p-3"><img class="w-9" src="./assets/ambulance.png" alt=""></figure>
-                <figure class="cursor-pointer "><i class="heart-Click fa-regular fa-heart text-3xl text-[#5C5C5C]"></i></figure>
+                <figure class="w-14 max-lg:w-12 rounded-2xl bg-[#FFE3E2] p-3"><img class="w-9" src="./assets/ambulance.png" alt=""></figure>
+                <figure class="cursor-pointer "><i class="heart-Click max-lg:text-xl fa-regular fa-heart text-3xl text-[#5C5C5C]"></i></figure>
                </div>
-               <h1 class="text-xl font-bold text-black mt-4">অ্যাম্বুলেন্স</h1>
-               <p class="text-base font-medium text-[#5C5C5C] mt-1">Ambulance</p>
+               <h1 class="text-xl max-lg:text-base font-bold text-black mt-4">অ্যাম্বুলেন্স</h1>
+               <p class="text-base font-medium max-lg:text-sm text-[#5C5C5C] mt-1">Ambulance</p>
                <h2 class="font-bold text-2xl text-[#111111] mt-5">1994-999999</h2>
                <div>
                 <button type="button" class="text-sm px-3 py-2 bg-[#F2F2F2] text-[#5C5C5C] rounded-full">স্বাস্থ্য</button>
                </div>
                <div class="grid grid-cols-2 w-full gap-3 mt-4">
-                <button type="button" class="copy-btn hover:bg-black hover:text-white transition-colors duration-700 ease-in-out cursor-pointer font-roboto p-2 rounded-lg border-2 border-[#D9D9D9]  block col-span-1 text-[#5C5C5C]"><i class="fa-regular fa-copy pr-1"></i>Copy</button>
-                <button type="button" class="call-Btn hover:bg-[#08ea5b] transition-colors duration-700 ease-in-out cursor-pointer font-roboto col-span-1 p-2 rounded-lg block bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-1 text-sm rotate-12"></i>Call</button>
+                <button type="button" class="max-lg:text-xs copy-btn hover:bg-black hover:text-white transition-colors duration-700 ease-in-out cursor-pointer font-roboto p-2 rounded-lg border-2 border-[#D9D9D9]  block col-span-1 text-[#5C5C5C]"><i class="fa-regular fa-copy pr-1"></i>Copy</button>
+                <button type="button" class= "max-lg:text-xs call-Btn hover:bg-[#08ea5b] transition-colors duration-700 ease-in-out cursor-pointer font-roboto col-span-1 p-2 rounded-lg block bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-1 text-sm rotate-12"></i>Call</button>
                </div>
             </div>
              <!-- ---------------------cart 2 here----------------------- -->
             <div class="card bg-base-100 w-full shadow-sm p-4 rounded-2xl">
                <div class="flex justify-between items-center">
-                <figure class="w-14 rounded-2xl bg-[#FFE3E2] p-3"><img class="w-9" src="./assets/woman-child.png" alt=""></figure>
-                <figure class="cursor-pointer "><i class="heart-Click fa-regular fa-heart text-3xl text-[#5C5C5C]"></i></figure>
+                <figure class="w-14 max-lg:w-12 rounded-2xl bg-[#FFE3E2] p-3"><img class="w-9" src="./assets/woman-child.png" alt=""></figure>
+                <figure class="cursor-pointer "><i class="heart-Click max-lg:text-xl fa-regular fa-heart text-3xl text-[#5C5C5C]"></i></figure>
                </div>
-               <h1 class="text-xl font-bold text-black mt-4">নারী ও শিশু সহায়তা</h1>
-               <p class="text-base font-medium text-[#5C5C5C] mt-1">Women & Child Helpline</p>
+               <h1 class="text-xl max-lg:text-base font-bold text-black mt-4">নারী ও শিশু সহায়তা</h1>
+               <p class="text-base font-medium max-lg:text-sm text-[#5C5C5C] mt-1">Women & Child Helpline</p>
                <h2 class="font-bold text-2xl text-[#111111] mt-5">109</h2>
                <div>
                 <button type="button" class="text-sm px-3 py-2 bg-[#F2F2F2] text-[#5C5C5C] rounded-full">সহায়তা</button>
                </div>
                <div class="grid grid-cols-2 w-full gap-3 mt-4">
-                <button type="button" class="copy-btn hover:bg-black hover:text-white transition-colors duration-700 ease-in-out cursor-pointer font-roboto p-2 rounded-lg border-2 border-[#D9D9D9]  block col-span-1 text-[#5C5C5C]"><i class="fa-regular fa-copy pr-1"></i>Copy</button>
-                <button type="button" class="call-Btn hover:bg-[#08ea5b] transition-colors duration-700 ease-in-out cursor-pointer font-roboto col-span-1 p-2 rounded-lg block bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-1 text-sm rotate-12"></i>Call</button>
+                <button type="button" class= "max-lg:text-xs copy-btn hover:bg-black hover:text-white transition-colors duration-700 ease-in-out cursor-pointer font-roboto p-2 rounded-lg border-2 border-[#D9D9D9]  block col-span-1 text-[#5C5C5C]"><i class="fa-regular fa-copy pr-1"></i>Copy</button>
+                <button type="button" class=" max-lg:text-xs call-Btn hover:bg-[#08ea5b] transition-colors duration-700 ease-in-out cursor-pointer font-roboto col-span-1 p-2 rounded-lg block bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-1 text-sm rotate-12"></i>Call</button>
                </div>
             </div>
              <!-- ---------------------cart 3 here----------------------- -->
             <div class="card bg-base-100 w-full shadow-sm p-4 rounded-2xl">
                <div class="flex justify-between items-center">
-                <figure class="w-14 rounded-2xl bg-[#FFE3E2] p-3"><img class="w-9" src="./assets/Anti-Corruption.svg" alt=""></figure>
-                <figure class="cursor-pointer "><i class="heart-Click fa-regular fa-heart text-3xl text-[#5C5C5C]"></i></figure>
+                <figure class="w-14 max-lg:w-12 rounded-2xl bg-[#FFE3E2] p-3"><img class="w-9" src="./assets/Anti-Corruption.svg" alt=""></figure>
+                <figure class="cursor-pointer "><i class="heart-Click max-lg:text-xl fa-regular fa-heart text-3xl text-[#5C5C5C]"></i></figure>
                </div>
-               <h1 class="text-xl font-bold text-black mt-4">দুদক</h1>
-               <p class="text-base font-medium text-[#5C5C5C] mt-1">Anti-Corruption</p>
+               <h1 class="text-xl max-lg:text-base font-bold text-black mt-4">দুদক</h1>
+               <p class="text-base font-medium max-lg:text-sm text-[#5C5C5C] mt-1">Anti-Corruption</p>
                <h2 class="font-bold text-2xl text-[#111111] mt-5">106</h2>
                <div>
                 <button type="button" class="text-sm px-3 py-2 bg-[#F2F2F2] text-[#5C5C5C] rounded-full">সরকারি</button>
                </div>
                <div class="grid grid-cols-2 w-full gap-3 mt-4">
-                <button type="button" class="copy-btn hover:bg-black hover:text-white transition-colors duration-700 ease-in-out cursor-pointer font-roboto p-2 rounded-lg border-2 border-[#D9D9D9]  block col-span-1 text-[#5C5C5C]"><i class="fa-regular fa-copy pr-1"></i>Copy</button>
-                <button type="button" class="call-Btn hover:bg-[#08ea5b] transition-colors duration-700 ease-in-out cursor-pointer font-roboto col-span-1 p-2 rounded-lg block bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-1 text-sm rotate-12"></i>Call</button>
+                <button type="button" class= "max-lg:text-xs copy-btn hover:bg-black hover:text-white transition-colors duration-700 ease-in-out cursor-pointer font-roboto p-2 rounded-lg border-2 border-[#D9D9D9]  block col-span-1 text-[#5C5C5C]"><i class="fa-regular fa-copy pr-1"></i>Copy</button>
+                <button type="button" class= "max-lg:text-xs call-Btn hover:bg-[#08ea5b] transition-colors duration-700 ease-in-out cursor-pointer font-roboto col-span-1 p-2 rounded-lg block bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-1 text-sm rotate-12"></i>Call</button>
                </div>
             </div>
           </div>
            <!-- ---------------------cart Container 3 here----------------------- -->
-          <div class="flex justify-between items-center gap-3">
+          <div class="flex justify-between items-center gap-3 max-md:flex-col">
              <!-- ---------------------cart 1 here----------------------- -->
             <div class="card bg-base-100 w-full shadow-sm p-4 rounded-2xl">
                <div class="flex justify-between items-center">
-                <figure class="w-14 rounded-2xl bg-[#FFE3E2] p-3"><img class="w-9" src="./assets/power-outage.png" alt=""></figure>
-                <figure class="cursor-pointer "><i class="heart-Click fa-regular fa-heart text-3xl text-[#5C5C5C]"></i></figure>
+                <figure class="w-14 max-lg:w-12 rounded-2xl bg-[#FFE3E2] p-3"><img class="w-9" src="./assets/power-outage.png" alt=""></figure>
+                <figure class="cursor-pointer "><i class="heart-Click max-lg:text-xl fa-regular fa-heart text-3xl text-[#5C5C5C]"></i></figure>
                </div>
-               <h1 class="text-xl font-bold text-black mt-4">বিদ্যুৎ বিভ্রাট</h1>
-               <p class="text-base font-medium text-[#5C5C5C] mt-1">Electricity Outage</p>
+               <h1 class="text-xl max-lg:text-base font-bold text-black mt-4">বিদ্যুৎ বিভ্রাট</h1>
+               <p class="text-base font-medium max-lg:text-sm text-[#5C5C5C] mt-1">Electricity Outage</p>
                <h2 class="font-bold text-2xl text-[#111111] mt-5">16216</h2>
                <div>
                 <button type="button" class="text-sm px-3 py-2 bg-[#F2F2F2] text-[#5C5C5C] rounded-full">বিদ্যুৎ</button>
                </div>
                <div class="grid grid-cols-2 w-full gap-3 mt-4">
-                <button type="button" class="copy-btn hover:bg-black hover:text-white transition-colors duration-700 ease-in-out cursor-pointer font-roboto p-2 rounded-lg border-2 border-[#D9D9D9]  block col-span-1 text-[#5C5C5C]"><i class="fa-regular fa-copy pr-1"></i>Copy</button>
-                <button type="button" class="call-Btn hover:bg-[#08ea5b] transition-colors duration-700 ease-in-out cursor-pointer font-roboto col-span-1 p-2 rounded-lg block bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-1 text-sm rotate-12"></i>Call</button>
+                <button type="button" class= "max-lg:text-xs copy-btn hover:bg-black hover:text-white transition-colors duration-700 ease-in-out cursor-pointer font-roboto p-2 rounded-lg border-2 border-[#D9D9D9]  block col-span-1 text-[#5C5C5C]"><i class="fa-regular fa-copy pr-1"></i>Copy</button>
+                <button type="button" class= "max-lg:text-xs call-Btn hover:bg-[#08ea5b] transition-colors duration-700 ease-in-out cursor-pointer font-roboto col-span-1 p-2 rounded-lg block bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-1 text-sm rotate-12"></i>Call</button>
                </div>
             </div>
              <!-- ---------------------cart 2 here----------------------- -->
             <div class="card bg-base-100 w-full shadow-sm p-4 rounded-2xl">
                <div class="flex justify-between items-center">
-                <figure class="w-14 rounded-2xl bg-[#FFE3E2] p-3"><img class="w-9" src="./assets/brac.png" alt=""></figure>
-                <figure class="cursor-pointer "><i class="heart-Click fa-regular fa-heart text-3xl text-[#5C5C5C]"></i></figure>
+                <figure class="w-14 max-lg:w-12 rounded-2xl bg-[#FFE3E2] p-3"><img class="w-9" src="./assets/brac.png" alt=""></figure>
+                <figure class="cursor-pointer "><i class="heart-Click max-lg:text-xl fa-regular fa-heart text-3xl text-[#5C5C5C]"></i></figure>
                </div>
-               <h1 class="text-xl font-bold text-black mt-4">ব্র্যাক</h1>
-               <p class="services-title text-base font-medium text-[#5C5C5C] mt-1">Brac</p>
+               <h1 class="text-xl max-lg:text-base font-bold text-black mt-4">ব্র্যাক</h1>
+               <p class="services-title text-base max-lg:text-sm font-medium text-[#5C5C5C] mt-1">Brac</p>
                <h2 class="font-bold text-2xl text-[#111111] mt-5">16445</h2>
                <div>
                 <button type="button" class="text-sm px-3 py-2 bg-[#F2F2F2] text-[#5C5C5C] rounded-full">এনজিও</button>
                </div>
                <div class="grid grid-cols-2 w-full gap-3 mt-4">
-                <button type="button" class="copy-btn hover:bg-black hover:text-white transition-colors duration-700 ease-in-out cursor-pointer font-roboto p-2 rounded-lg border-2 border-[#D9D9D9]  block col-span-1 text-[#5C5C5C]"><i class="fa-regular fa-copy pr-1"></i>Copy</button>
-                <button type="button" class="call-Btn hover:bg-[#08ea5b] transition-colors duration-700 ease-in-out cursor-pointer font-roboto col-span-1 p-2 rounded-lg block bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-1 text-sm rotate-12"></i>Call</button>
+                <button type="button" class="max-lg:text-xs copy-btn hover:bg-black hover:text-white transition-colors duration-700 ease-in-out cursor-pointer font-roboto p-2 rounded-lg border-2 border-[#D9D9D9]  block col-span-1 text-[#5C5C5C]"><i class="fa-regular fa-copy pr-1"></i>Copy</button>
+                <button type="button" class="max-lg:text-xs call-Btn hover:bg-[#08ea5b] transition-colors duration-700 ease-in-out cursor-pointer font-roboto col-span-1 p-2 rounded-lg block bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-1 text-sm rotate-12"></i>Call</button>
                </div>
             </div>
              <!-- ---------------------cart 3 here----------------------- -->
             <div class="card bg-base-100 w-full shadow-sm p-4 rounded-2xl">
                <div class="flex justify-between items-center">
-                <figure class="w-14 rounded-2xl bg-[#FFE3E2] p-3"><img class="w-9" src="./assets/Bangladesh-Railway.png" alt=""></figure>
-                <figure class="cursor-pointer"><i class=" heart-Click fa-regular fa-heart text-3xl text-[#5C5C5C]"></i></figure>
+                <figure class="w-14 max-lg:w-12 rounded-2xl bg-[#FFE3E2] p-3"><img class="w-9" src="./assets/Bangladesh-Railway.png" alt=""></figure>
+                <figure class="cursor-pointer"><i class=" heart-Click max-lg:text-xl fa-regular fa-heart text-3xl text-[#5C5C5C]"></i></figure>
                </div>
-               <h1 class="text-xl font-bold text-black mt-4">বাংলাদেশ রেলওয়ে</h1>
-               <p class="text-base font-medium text-[#5C5C5C] mt-1">Bangladesh Railway</p>
+               <h1 class="text-xl max-lg:text-base font-bold text-black mt-4">বাংলাদেশ রেলওয়ে</h1>
+               <p class="text-base font-medium max-lg:text-sm text-[#5C5C5C] mt-1">Bangladesh Railway</p>
                <h2 class="font-bold text-2xl text-[#111111] mt-5">163</h2>
                <div>
                 <button type="button" class="text-sm px-3 py-2 bg-[#F2F2F2] text-[#5C5C5C] rounded-full">পরিবহন</button>
                </div>
                <div class="grid grid-cols-2 w-full gap-3 mt-4">
-                <button type="button" class="copy-btn hover:bg-black hover:text-white transition-colors duration-700 ease-in-out cursor-pointer font-roboto p-2 rounded-lg border-2 border-[#D9D9D9]  block col-span-1 text-[#5C5C5C]"><i class="fa-regular fa-copy pr-1"></i>Copy</button>
-                <button type="button" class="call-Btn hover:bg-[#08ea5b] transition-colors duration-700 ease-in-out cursor-pointer font-roboto col-span-1 p-2 rounded-lg block bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-1 text-sm rotate-12"></i>Call</button>
+                <button type="button" class= "max-lg:text-xs copy-btn hover:bg-black hover:text-white transition-colors duration-700 ease-in-out cursor-pointer font-roboto p-2 rounded-lg border-2 border-[#D9D9D9]  block col-span-1 text-[#5C5C5C]"><i class="fa-regular fa-copy pr-1"></i>Copy</button>
+                <button type="button" class= "max-lg:text-xs call-Btn hover:bg-[#08ea5b] transition-colors duration-700 ease-in-out cursor-pointer font-roboto col-span-1 p-2 rounded-lg block bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-1 text-sm rotate-12"></i>Call</button>
                </div>
             </div>
           </div>
- <!-- ---------------------Call history start here----------------------- -->
         </div>
-        <div class="bg-white shadow rounded-xl col-span-3 p-5 h-full ">
+  <!-- ---------------------Call history start here----------------------- -->
+        <aside class="bg-white shadow rounded-xl col-span-3 max-sm:col-span-12 max-md:col-span-5 p-5 h-full max-lg:p-4">
           <div class="flex justify-between items-center">
-            <h1 class="text-black font-semibold text-lg"><img class="mr-2 inline" src="./assets/clock-icon.png" alt="">Call History</h1>
-            <button id="clearBtn" class="hover:bg-gray-400 hover:text-white transition-colors duration-700 ease-in-out cursor-pointer px-8 py-3 rounded-[50px] text-base font-semibold bg-[#00A63E] text-white">Clear</button>
+            <h1 class="text-black font-semibold text-lg max-lg:text-xs"><img class="mr-2 inline max-lg:w-5" src="./assets/clock-icon.png" alt="">Call History</h1>
+            <button id="clearBtn" class="hover:bg-gray-400 hover:text-white transition-colors duration-700 ease-in-out cursor-pointer max-xl:px-5 max-xl:py-2 max-xl:text-sm px-8 py-3 rounded-[50px] text-base font-semibold bg-[#00A63E] text-white">Clear</button>
           </div>
           <div id="history-card" class="mt-5">
             
 
           </div>
-        </div>
+        </aside>
       </section>
     </main>
 

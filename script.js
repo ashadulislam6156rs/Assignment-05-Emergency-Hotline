@@ -34,11 +34,11 @@ for (let callBtn of callBtns) {
             let div = document.createElement("div");
             div.innerHTML = `<div class="flex justify-between gap-3 items-center bg-[#fafafa] rounded-lg p-3 mb-3">
               <div>
-              <h1 class="text-sm font-medium text-[#111111]">${servicesTile1}</h1>
+              <h1 class="text-sm max-lg:text-[9px] font-medium text-[#111111]">${servicesTile1}</h1>
               <h2 class="text-[#5C5C5C] text-sm font-medium">${servicesNumber}</h2>
               </div>
               <div>
-                <h2 class="text-sm font-medium text-[#111111]">${historyCardTime}</h2>
+                <h2 class="text-sm font-medium max-lg:text-xs text-[#111111]">${historyCardTime}</h2>
               </div>
             </div>`
             
