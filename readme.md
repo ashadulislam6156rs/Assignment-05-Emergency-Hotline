@@ -49,7 +49,7 @@ Child button clicked <br>
 Parent div clicked<br>
 Here you can see that the event first started from the child button then bubbled up and went to the parent div.
 
-4. What is **Event Delegation** in JavaScript? Why is it useful?
+4. What is **Event Delegation** in JavaScript? Why is it useful? <br>
 #### Answer:<br>
 Event Delegation is a JavaScript technique where, instead of having separate event listeners for many child elements, an event listener is placed on a parent element.
 The event is then passed to the parent using event bubbling, and the parent is identified to a specific child.
