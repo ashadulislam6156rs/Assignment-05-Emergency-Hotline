@@ -58,11 +58,15 @@ The event is then passed to the parent using event bubbling, and the parent is i
 - Dynamic elements can be handled  
 - Clean code & less memory usage 
 <br>
-6. What is the difference between **preventDefault() and stopPropagation()** methods?
-  #### Answer:<br> 
-| Method                | Purpose                                        | Example Use Case                        |
-|-----------------------|-----------------------------------------------|----------------------------------------|
-| preventDefault()    | Stop default browser action                   | Form submit, link click                 |
-| stopPropagation()   | Stop event from bubbling or capturing        | Nested elements event handling control |
+
+5. What is the difference between **preventDefault() and stopPropagation()** methods?
+
+#### Answer:
+
+| Method            | Purpose                                | Example Use Case                         |
+|-------------------|----------------------------------------|------------------------------------------|
+| preventDefault()  | Stop default browser action            | Form submit, link click                   |
+| stopPropagation() | Stop event from bubbling or capturing | Nested elements event handling control   |
+
 
 
