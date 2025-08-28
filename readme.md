@@ -59,7 +59,7 @@ The event is then passed to the parent using event bubbling, and the parent is i
 - Clean code & less memory usage 
 <br>
 6. What is the difference between **preventDefault() and stopPropagation()** methods?
-
+  #### Answer:<br> 
 | Method                | Purpose                                        | Example Use Case                        |
 |-----------------------|-----------------------------------------------|----------------------------------------|
 | preventDefault()    | Stop default browser action                   | Form submit, link click                 |
