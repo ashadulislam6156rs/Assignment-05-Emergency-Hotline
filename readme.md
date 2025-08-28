@@ -32,6 +32,7 @@ Event Bubbling is a process where an event starts from the innermost element and
 ```html
 <!-- Then  Initial DOM -->
 <div id="parent"><button id="child">Click Me</button></div>
+```
 ```javascript
 //Parent Element
 document.getElementById("parent").addEventListener("click", () => {
@@ -42,7 +43,7 @@ document.getElementById("parent").addEventListener("click", () => {
 document.getElementById("child").addEventListener("click", () => {
   console.log("Child button clicked");
 });
-
+```
 ### Output: <br>
 Child button clicked <br>
 Parent div clicked<br>
@@ -61,7 +62,7 @@ The event is then passed to the parent using event bubbling, and the parent is i
 
 | Method                | Purpose                                        | Example Use Case                        |
 |-----------------------|-----------------------------------------------|----------------------------------------|
-| `preventDefault()`    | Stop default browser action                   | Form submit, link click                 |
-| `stopPropagation()`   | Stop event from bubbling or capturing        | Nested elements event handling control |
+| preventDefault()    | Stop default browser action                   | Form submit, link click                 |
+| stopPropagation()   | Stop event from bubbling or capturing        | Nested elements event handling control |
 
 
