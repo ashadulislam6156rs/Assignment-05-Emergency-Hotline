@@ -10,7 +10,42 @@
 | querySelectorAll("cssSelector") | NodeList        | CSS selector  | To catch all matching elements      |
    
 2. How do you **create and insert a new element into the DOM**?
-4. What is **Event Bubbling** and how does it work?
-5. What is **Event Delegation** in JavaScript? Why is it useful?
+#### Answer:<br>
+<div id="myName"></div>  <!-- Initial DOM -->  
+let newElement = document.createElement("p");   // Create a new element 
+newElement.innerText = "My Name is Ashadul islam";  // Set content 
+let myName = document.getElementById("myName");  // Select the DOM parent element 
+myName.appendChild(newElement);   // Inserting into the DOM 
+
+3. What is **Event Bubbling** and how does it work?
+#### Answer:<br>
+Event Bubbling is a process where an event starts from the innermost element and propagates step by step up to its parent to grandparent then the entire DOM tree.
+//Then
+<div id="parent"><button id="child">Click Me</button></div>  <!-- Initial DOM --> 
+//Parent Element
+document.getElementById("parent").addEventListener("click", () => {
+  console.log("Parent div clicked");
+});
+//Child Element
+document.getElementById("child").addEventListener("click", () => {
+  console.log("Child button clicked");
+});
+### Output:
+Child button clicked
+Parent div clicked
+Here you can see that the event first started from the child button then bubbled up and went to the parent div.
+
+4. What is **Event Delegation** in JavaScript? Why is it useful?
+#### Answer:<br>
+Event Delegation is a JavaScript technique where, instead of having separate event listeners for many child elements, an event listener is placed on a parent element.
+The event is then passed to the parent using event bubbling, and the parent is identified to a specific child.
+-Performance is better
+-Dynamic elements can be handled
+-Clean code & less memory usage
 6. What is the difference between **preventDefault() and stopPropagation()** methods?
+| Method                | Purpose                                        | Example Use Case                        |
+|-----------------------|-----------------------------------------------|----------------------------------------|
+| `preventDefault()`    | Stop default browser action                   | Form submit, link click                 |
+| `stopPropagation()`   | Stop event from bubbling or capturing        | Nested elements event handling control |
+
 
