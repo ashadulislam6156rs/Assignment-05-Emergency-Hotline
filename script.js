@@ -22,9 +22,9 @@ for (let callBtn of callBtns) {
         let coinCount = parseInt(document.getElementById("coin-count").innerText);
         let servicesTile = callBtn.parentNode.parentNode.children[2].innerText;
         let servicesNumber = callBtn.parentNode.parentNode.children[3].innerText;
-        // console.log(servicesTile, servicesNumber);
+       
         
-        if (coinCount >= 0 && coinCount != 0) {
+        if (coinCount >= 20) {
             alert("📞 Calling "+ servicesTile + " " + servicesNumber + " ...");
             coinCount -= 20;
             document.getElementById("coin-count").innerText = coinCount;
@@ -52,7 +52,6 @@ for (let callBtn of callBtns) {
         }
         else {
             alert("❌ আপনার পর্যাপ্ত কয়েন নেই, কল করতে ন্যূনতম ২০ কয়েন লাগবে!");
-            coinCount = 0;
             document.getElementById("coin-count").innerText = coinCount;
         }
 
