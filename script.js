@@ -16,6 +16,7 @@ for (let heart of heartClickEl) {
 
 // Call Functionality start
 const callBtns = document.querySelectorAll(".call-Btn");
+let historyCardEl = document.getElementById("history-card");
 
 for (let callBtn of callBtns) {
     callBtn.addEventListener("click", function (event) {
@@ -28,7 +29,6 @@ for (let callBtn of callBtns) {
             alert("📞 Calling "+ servicesTile + " " + servicesNumber + " ...");
             coinCount -= 20;
             document.getElementById("coin-count").innerText = coinCount;
-            let historyCardEl = document.getElementById("history-card");
             let servicesTile1 = callBtn.parentNode.parentNode.children[1].innerText;
             let historyCardTime = new Date().toLocaleTimeString();
             let div = document.createElement("div");
@@ -43,11 +43,6 @@ for (let callBtn of callBtns) {
             </div>`
             
             historyCardEl.appendChild(div);
-
-            const clearBtn = document.getElementById("clearBtn");
-            clearBtn.addEventListener("click", function () {
-                historyCardEl.innerHTML = ""; 
-            })
             
         }
         else {
@@ -58,6 +53,12 @@ for (let callBtn of callBtns) {
     })
     
 }
+
+// Clear Functionality start
+    const clearBtn = document.getElementById("clearBtn");
+    clearBtn.addEventListener("click", function () {
+        historyCardEl.innerHTML = ""; 
+    })
 
 // Copy Functionality start
 
